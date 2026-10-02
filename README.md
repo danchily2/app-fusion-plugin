@@ -13,7 +13,13 @@ native iOS, React Native and native Android. You get:
 
 ## Install
 
-You need [Claude Code](https://code.claude.com). From a clone of this repository:
+You need [Claude Code](https://code.claude.com). This repository is the plugin itself, so a clone runs as is:
+
+```
+claude --plugin-dir /path/to/app-fusion-plugin
+```
+
+Or install it from the marketplace repository, [danchily2/app-fusion](https://github.com/danchily2/app-fusion):
 
 ```
 /plugin marketplace add /path/to/app-fusion
@@ -23,7 +29,7 @@ You need [Claude Code](https://code.claude.com). From a clone of this repository
 It runs in Devin (the CLI and Devin Desktop) too, which loads the same Claude Code layout:
 
 ```
-devin plugins install danchily2/app-fusion#plugins/app-fusion      # or --local /path/to/app-fusion/plugins/app-fusion
+devin plugins install danchily2/app-fusion-plugin      # or --local /path/to/app-fusion-plugin
 ```
 
 The commands are the same (`/app-fusion:fuse` and so on). What differs in Devin:
